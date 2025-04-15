@@ -20,7 +20,7 @@ if 'right_index' not in st.session_state:
     st.session_state.right_index = 1
 
 # Generate image URLs for image_1.webp to image_100.webp
-image_list = [f"https://raw.githubusercontent.com/MuhammadHamza123c/Rating/main/image_{i}.webp" for i in range(1, 101)]
+image_list = [f"https://raw.githubusercontent.com/MuhammadHamza123c/Rating/main/image_{i}.webp" for i in range(2, 101)]
 
 # Display columns for left and right images
 col1, _, col2 = st.columns([1, 0.1, 1])
