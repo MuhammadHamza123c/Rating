@@ -26,7 +26,7 @@ image_list = [f"https://raw.githubusercontent.com/MuhammadHamza123c/Rating/main/
 col1, _, col2 = st.columns([1, 0.1, 1])
 
 with col1:
-    st.image(image_list[st.session_state.left_index], caption="")
+    st.image(image_list[st.session_state.left_index], caption="",width=500)
     if st.button("This"):
         # Update Elo ratings
         st.session_state.player_a = elo_most(st.session_state.player_a, st.session_state.player_b, 32, 1)
@@ -35,7 +35,7 @@ with col1:
         st.session_state.right_index = random.randint(0, len(image_list)-1)
 
 with col2:
-    st.image(image_list[st.session_state.right_index], caption="")
+    st.image(image_list[st.session_state.right_index], caption="",width=500)
     if st.button("That"):
         # Update Elo ratings
         st.session_state.player_a = elo_most(st.session_state.player_a, st.session_state.player_b, 32, 0)
